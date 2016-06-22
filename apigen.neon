@@ -1,0 +1,4 @@
+source:
+    - vendor/phpcommon/comparison/src
+title: PHPCommon Comparison API
+baseUrl: https://marcospassos.github.io/phpcommon-comparison/api/latest

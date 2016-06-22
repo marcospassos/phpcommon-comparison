@@ -1,0 +1,22 @@
+{
+  "license": "MIT",
+  "description": "The PhpCommon Comparison API documentation",
+  "homepage": "https://github.com/marcospassos/phpcommon-comparison",
+  "authors": [
+    {
+      "name": "Marcos Passos",
+      "email": "marcos@marcospassos.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "config": {
+    "bin-dir": "bin"
+  },
+  "require-dev": {
+    "php": "^5.5|^7.0",
+    "apigen/apigen": "~4.0",
+    "phpunit/phpunit": "~5.5",
+    "phpcommon/comparison": "dev-master"
+  }
+}
