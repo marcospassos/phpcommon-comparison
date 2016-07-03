@@ -1,0 +1,3 @@
+
+var ApiGen = ApiGen || {};
+ApiGen.elements = [["c","PhpCommon\\Comparison\\Comparable"],["c","PhpCommon\\Comparison\\Comparator"],["c","PhpCommon\\Comparison\\Equatable"],["c","PhpCommon\\Comparison\\Equivalence"],["c","PhpCommon\\Comparison\\Equivalence\\GenericEquivalence"],["c","PhpCommon\\Comparison\\Hashable"],["c","PhpCommon\\Comparison\\Hasher"],["c","PhpCommon\\Comparison\\Hasher\\DateTimeHasher"],["c","PhpCommon\\Comparison\\Hasher\\GenericHasher"],["c","PhpCommon\\Comparison\\Hasher\\IdentityHasher"],["c","PhpCommon\\Comparison\\Hasher\\ValueHasher"],["c","PhpCommon\\Comparison\\IncomparableException"],["c","PhpCommon\\Comparison\\UnexpectedTypeException"]];

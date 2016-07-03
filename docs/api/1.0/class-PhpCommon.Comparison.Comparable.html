@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Interface PhpCommon\Comparison\Comparable | PHPCommon Comparison API</title>
+
+	<link rel="stylesheet" href="resources/style.css?c2f33731c1948fbed7c333554678bfa68d4817da">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+				<li class="active">
+					<a href="namespace-PhpCommon.html">
+						PhpCommon<span></span>
+					</a>
+
+						<ul>
+				<li class="active">
+					<a href="namespace-PhpCommon.Comparison.html">
+						Comparison<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-PhpCommon.Comparison.Equivalence.html">
+						Equivalence					</a>
+
+						</li>
+				<li>
+					<a href="namespace-PhpCommon.Comparison.Hasher.html">
+						Hasher					</a>
+
+						</li>
+							</ul></li></ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li class="active"><a href="class-PhpCommon.Comparison.Comparable.html">Comparable</a></li>
+				<li><a href="class-PhpCommon.Comparison.Comparator.html">Comparator</a></li>
+				<li><a href="class-PhpCommon.Comparison.Equatable.html">Equatable</a></li>
+				<li><a href="class-PhpCommon.Comparison.Equivalence.html">Equivalence</a></li>
+				<li><a href="class-PhpCommon.Comparison.Hashable.html">Hashable</a></li>
+				<li><a href="class-PhpCommon.Comparison.Hasher.html">Hasher</a></li>
+			</ul>
+
+
+			<h3>Exceptions</h3>
+			<ul>
+				<li><a href="class-PhpCommon.Comparison.IncomparableException.html">IncomparableException</a></li>
+				<li><a href="class-PhpCommon.Comparison.UnexpectedTypeException.html">UnexpectedTypeException</a></li>
+			</ul>
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-PhpCommon.Comparison.html" title="Summary of PhpCommon\Comparison"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Interface Comparable</h1>
+
+
+	<div class="description">
+	<p>Defines a method that a class implements to provide natural order of sorting
+to instances.</p>
+
+<p>This interface imposes a total ordering on the objects of each class
+that implements it. This ordering is referred to as the <em>natural ordering</em>
+of the class, and the method <code><a href="class-PhpCommon.Comparison.Comparable.html#_compareTo">PhpCommon\Comparison\Comparable::compareTo()</a></code> is referred to as its
+<em>natural comparison method</em>.</p>
+
+<p>The natural ordering for a class <code>C</code> is said to be consistent with
+PhpCommon\Comparison\Equatable::equals() if and only if
+<code>$a-&gt;compareTo($b) === 0</code> has the same boolean value as <code>$a-&gt;equals($b)</code> for
+every <code>$a</code> and <code>$b</code> of class <code>C</code>.</p>
+
+<p>It is strongly recommended (though not required) that natural orderings
+be consistent with PhpCommon\Comparison\Equatable::equals(). This is
+so because in certain cases these methods can be used together in a
+complementary way to achieve specific results. For example, some structures,
+such as sets and maps, may use the methods PhpCommon\Comparison\Equatable::equals() and <code><a href="class-PhpCommon.Comparison.Comparable.html#_compareTo">PhpCommon\Comparison\Comparable::compareTo()</a></code> as part
+of the strategy to determine where to store or retrieve data. In that way,
+such inconsistency may lead to unwanted results.</p>
+
+<p>It is inspired by the <code>Comparable</code> interface, from Java API.</p>
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-PhpCommon.html">PhpCommon</a>\<a href="namespace-PhpCommon.Comparison.html">Comparison</a><br>
+		
+
+				<b>Author:</b>
+				Marcos Passos <a href="&#x6d;&#97;&#x69;&#108;&#x74;&#111;&#58;&#x6d;&#97;&#x72;&#99;o&#x73;&#64;&#x63;&#114;o&#x63;&#116;&#x2e;&#99;&#x6f;&#x6d;">&#x6d;&#97;&#x72;&#99;o&#x73;&#64;&#x63;&#114;o&#x63;&#116;&#x2e;&#99;&#x6f;&#x6d;</a><br>
+				<b>Link:</b>
+				<a href="https://docs.oracle.com/javase/7/docs/api/java/lang/Comparable.html">Java Comparable interface</a><br>
+			<b>Located at</b> <a href="source-class-PhpCommon.Comparison.Comparable.html#14-77" title="Go to source code">Comparable.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="compareTo" id="_compareTo">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_compareTo">#</a>
+		<code><a href="source-class-PhpCommon.Comparison.Comparable.html#46-76" title="Go to source code">compareTo</a>( <span><code><a href="class-PhpCommon.Comparison.Comparable.html">PhpCommon\Comparison\Comparable</a></code> <var>$other</var></span> )</code>
+
+		<div class="description short">
+			<p>Compares the current object with another for order.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Compares the current object with another for order.</p>
+
+<p>This method has the following properties:</p>
+
+<ul>
+<li>It is <em>reflexive</em>: for any instance of <code><a href="class-PhpCommon.Comparison.Equatable.html">PhpCommon\Comparison\Equatable</a></code> <code>$x</code>, <code>$x-&gt;compareTo($x) === 0</code>.</li>
+<li>It is <em>antisymmetric</em>: for any instances of <code><a href="class-PhpCommon.Comparison.Equatable.html">PhpCommon\Comparison\Equatable</a></code> <code>$x</code> and <code>$y</code>, if <code>$y-&gt;compareTo($x) &lt;= 0</code> and <code>$x-&gt;compareTo($y) &lt;= 0</code>, then <code>$x-&gt;compareTo($y) === 0</code>.</li>
+<li>It is <em>transitive</em>: for any instances of <code><a href="class-PhpCommon.Comparison.Equatable.html">PhpCommon\Comparison\Equatable</a></code> <code>$x</code>, <code>$y</code>, and <code>$z</code>, if <code>$x-&gt;compareTo($y) &lt;= 0</code> and <code>$y-&gt;compareTo($z) &lt;= 0</code>, then <code>$x-&gt;compareTo($z) &lt;= 0</code>.</li>
+</ul>
+
+<p>It is strongly recommended, but not strictly required, that
+<code>($x-&gt;compareTo($y) === 0) === ($x-&gt;equalTo($y))</code>. Generally speaking,
+any class that implements the <code><a href="class-PhpCommon.Comparison.Comparable.html">PhpCommon\Comparison\Comparable</a></code> interface and violates
+this condition should clearly indicate this fact. The recommended
+language is <em>"Note: this class has a natural ordering that is
+inconsistent with its natural equality relation."</em>.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$other</var></dt>
+					<dd>The object to compare to.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean<br><p>Returns a negative integer, zero, or a positive integer
+                as this object is less than, equal to or greater than
+                the specified object.</p>
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><a href="class-PhpCommon.Comparison.IncomparableException.html">PhpCommon\Comparison\IncomparableException</a></code><br><p>If the specified object is not comparable
+                              to current object.</p>
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		PHPCommon Comparison API API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>

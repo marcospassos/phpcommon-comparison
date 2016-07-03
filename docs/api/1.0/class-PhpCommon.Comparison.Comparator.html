@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Interface PhpCommon\Comparison\Comparator | PHPCommon Comparison API</title>
+
+	<link rel="stylesheet" href="resources/style.css?c2f33731c1948fbed7c333554678bfa68d4817da">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+				<li class="active">
+					<a href="namespace-PhpCommon.html">
+						PhpCommon<span></span>
+					</a>
+
+						<ul>
+				<li class="active">
+					<a href="namespace-PhpCommon.Comparison.html">
+						Comparison<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-PhpCommon.Comparison.Equivalence.html">
+						Equivalence					</a>
+
+						</li>
+				<li>
+					<a href="namespace-PhpCommon.Comparison.Hasher.html">
+						Hasher					</a>
+
+						</li>
+							</ul></li></ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="class-PhpCommon.Comparison.Comparable.html">Comparable</a></li>
+				<li class="active"><a href="class-PhpCommon.Comparison.Comparator.html">Comparator</a></li>
+				<li><a href="class-PhpCommon.Comparison.Equatable.html">Equatable</a></li>
+				<li><a href="class-PhpCommon.Comparison.Equivalence.html">Equivalence</a></li>
+				<li><a href="class-PhpCommon.Comparison.Hashable.html">Hashable</a></li>
+				<li><a href="class-PhpCommon.Comparison.Hasher.html">Hasher</a></li>
+			</ul>
+
+
+			<h3>Exceptions</h3>
+			<ul>
+				<li><a href="class-PhpCommon.Comparison.IncomparableException.html">IncomparableException</a></li>
+				<li><a href="class-PhpCommon.Comparison.UnexpectedTypeException.html">UnexpectedTypeException</a></li>
+			</ul>
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-PhpCommon.Comparison.html" title="Summary of PhpCommon\Comparison"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Interface Comparator</h1>
+
+
+	<div class="description">
+	<p>A strategy for sorting values.</p>
+
+<p>A comparison function, which imposes a total ordering on some collection of
+objects. Comparators can be passed to a sort method of a collection to allow
+precise control over its sort order. It can also be used to control the
+order of certain data structures, such as sorted sets or sorted maps.</p>
+
+<p>The ordering imposed by a Ordering <code>$c</code> on a set of elements <code>S</code> is
+said to be consistent with an <code><a href="class-PhpCommon.Comparison.Equivalence.html">PhpCommon\Comparison\Equivalence</a></code> <code>$e</code> if and only if
+<code>$c-&gt;compare($a, $b) === 0</code> has the same boolean value as
+<code>$e-&gt;equivalent($a, $b)</code> for every <code>$a</code> and <code>$b</code> in <code>S</code>.</p>
+
+<p>It is strongly recommended, though not required, that natural orderings
+be consistent with <a href="Equatable::equals()">Equatable::equals()</a>. This is so because in
+certain cases these methods can be used together in a complementary way to
+achieve specific results. For example, some structures, such as sets and
+maps, may use both <a href="Equatable::equals()">Equatable::equals()</a> and
+<a href="Ordering::compare()">Ordering::compare()</a> methods as part of the strategy to determine
+where to store or retrieve data. In the way, such inconsistency may lead to
+unwanted results.</p>
+
+<p>It is inspired by the Comparator interface, from Java API.</p>
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-PhpCommon.html">PhpCommon</a>\<a href="namespace-PhpCommon.Comparison.html">Comparison</a><br>
+		
+
+				<b>Author:</b>
+				Marcos Passos <a href="&#x6d;&#97;&#x69;&#108;&#x74;&#111;&#58;&#x6d;&#97;&#x72;&#99;o&#x73;&#64;&#x63;&#114;o&#x63;&#116;&#x2e;&#99;&#x6f;&#x6d;">&#x6d;&#97;&#x72;&#99;o&#x73;&#64;&#x63;&#114;o&#x63;&#116;&#x2e;&#99;&#x6f;&#x6d;</a><br>
+				<b>Link:</b>
+				<a href="https://docs.oracle.com/javase/7/docs/api/java/util/Comparator.html">Java Comparator interface</a><br>
+			<b>Located at</b> <a href="source-class-PhpCommon.Comparison.Comparator.html#14-79" title="Go to source code">Comparator.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="compare" id="_compare">
+
+		<td class="attributes"><code>
+			 public 
+
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_compare">#</a>
+		<code><a href="source-class-PhpCommon.Comparison.Comparator.html#45-78" title="Go to source code">compare</a>( <span>mixed <var>$left</var></span>, <span>mixed <var>$right</var></span> )</code>
+
+		<div class="description short">
+			<p>Compares two values for order.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Compares two values for order.</p>
+
+<p>This method has the following properties:</p>
+
+<ul>
+<li>It is <em>reflexive</em>: for any <code>$x</code>, <code>compare($x, $x) === 0</code>.</li>
+<li>It is <em>antisymmetric</em>: for any <code>$x</code> and <code>$y</code>, if <code>compare($x, $y) &lt;= 0</code> and <code>compare($y, $x) &lt;= 0</code>, then <code>compare($x, $y) === 0</code>.</li>
+<li>It is <em>transitive</em>: for any values <code>$x</code>, <code>$y</code>, and <code>$z</code>, if <code>compare($x, $y) &lt;= 0</code> and <code>compare($y, $z) &lt;= 0</code>, then <code>compare($x, $z) &lt;= 0</code>.</li>
+</ul>
+
+<p>It is strongly recommended, but <em>not</em> strictly required, that
+<code>(compare($x, $y) === 0) === ($x-&gt;equals($y))</code>. Generally speaking, any
+ordering that violates this condition should clearly indicate this
+fact. The recommended language is <em>"Note: this class imposes an ordering
+that is inconsistent with the natural equivalence relation of the
+values."</em>.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$left</var></dt>
+					<dd>The left-hand side to compare with.</dd>
+					<dt><var>$right</var></dt>
+					<dd>The right-hand side to compare with.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					integer<br><p>Returns a negative integer, zero, or a positive integer
+                as the left-hand side is less than, equal to or greater
+                than the right-hand side.</p>
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><a href="class-PhpCommon.Comparison.UnexpectedTypeException.html">PhpCommon\Comparison\UnexpectedTypeException</a></code><br><p>If the type of the left-hand side does
+                                not match the expected type.</p><br>
+					<code><a href="class-PhpCommon.Comparison.IncomparableException.html">PhpCommon\Comparison\IncomparableException</a></code><br><p>If the specified values are not
+                                comparable under the current order
+                                relation.</p>
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		PHPCommon Comparison API API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>

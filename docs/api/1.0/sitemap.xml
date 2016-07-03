@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+	<loc>https://marcospassos.github.io/phpcommon-comparison/api/latest/index.html</loc>
+</url>
+<url>
+	<loc>https://marcospassos.github.io/phpcommon-comparison/api/latest/namespace-PhpCommon.html</loc>
+</url>
+<url>
+	<loc>https://marcospassos.github.io/phpcommon-comparison/api/latest/namespace-PhpCommon.Comparison.html</loc>
+</url>
+<url>
+	<loc>https://marcospassos.github.io/phpcommon-comparison/api/latest/namespace-PhpCommon.Comparison.Equivalence.html</loc>
+</url>
+<url>
+	<loc>https://marcospassos.github.io/phpcommon-comparison/api/latest/namespace-PhpCommon.Comparison.Hasher.html</loc>
+</url>
+
+
+<url>
+	<loc>https://marcospassos.github.io/phpcommon-comparison/api/latest/class-PhpCommon.Comparison.Equivalence.GenericEquivalence.html</loc>
+</url>
+<url>
+	<loc>https://marcospassos.github.io/phpcommon-comparison/api/latest/class-PhpCommon.Comparison.Hasher.DateTimeHasher.html</loc>
+</url>
+<url>
+	<loc>https://marcospassos.github.io/phpcommon-comparison/api/latest/class-PhpCommon.Comparison.Hasher.GenericHasher.html</loc>
+</url>
+<url>
+	<loc>https://marcospassos.github.io/phpcommon-comparison/api/latest/class-PhpCommon.Comparison.Hasher.IdentityHasher.html</loc>
+</url>
+<url>
+	<loc>https://marcospassos.github.io/phpcommon-comparison/api/latest/class-PhpCommon.Comparison.Hasher.ValueHasher.html</loc>
+</url>
+<url>
+	<loc>https://marcospassos.github.io/phpcommon-comparison/api/latest/class-PhpCommon.Comparison.Comparable.html</loc>
+</url>
+<url>
+	<loc>https://marcospassos.github.io/phpcommon-comparison/api/latest/class-PhpCommon.Comparison.Comparator.html</loc>
+</url>
+<url>
+	<loc>https://marcospassos.github.io/phpcommon-comparison/api/latest/class-PhpCommon.Comparison.Equatable.html</loc>
+</url>
+<url>
+	<loc>https://marcospassos.github.io/phpcommon-comparison/api/latest/class-PhpCommon.Comparison.Equivalence.html</loc>
+</url>
+<url>
+	<loc>https://marcospassos.github.io/phpcommon-comparison/api/latest/class-PhpCommon.Comparison.Hashable.html</loc>
+</url>
+<url>
+	<loc>https://marcospassos.github.io/phpcommon-comparison/api/latest/class-PhpCommon.Comparison.Hasher.html</loc>
+</url>
+<url>
+	<loc>https://marcospassos.github.io/phpcommon-comparison/api/latest/class-PhpCommon.Comparison.IncomparableException.html</loc>
+</url>
+<url>
+	<loc>https://marcospassos.github.io/phpcommon-comparison/api/latest/class-PhpCommon.Comparison.UnexpectedTypeException.html</loc>
+</url>
+</urlset>

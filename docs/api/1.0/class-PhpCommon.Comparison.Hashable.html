@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Interface PhpCommon\Comparison\Hashable | PHPCommon Comparison API</title>
+
+	<link rel="stylesheet" href="resources/style.css?c2f33731c1948fbed7c333554678bfa68d4817da">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+				<li class="active">
+					<a href="namespace-PhpCommon.html">
+						PhpCommon<span></span>
+					</a>
+
+						<ul>
+				<li class="active">
+					<a href="namespace-PhpCommon.Comparison.html">
+						Comparison<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-PhpCommon.Comparison.Equivalence.html">
+						Equivalence					</a>
+
+						</li>
+				<li>
+					<a href="namespace-PhpCommon.Comparison.Hasher.html">
+						Hasher					</a>
+
+						</li>
+							</ul></li></ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="class-PhpCommon.Comparison.Comparable.html">Comparable</a></li>
+				<li><a href="class-PhpCommon.Comparison.Comparator.html">Comparator</a></li>
+				<li><a href="class-PhpCommon.Comparison.Equatable.html">Equatable</a></li>
+				<li><a href="class-PhpCommon.Comparison.Equivalence.html">Equivalence</a></li>
+				<li class="active"><a href="class-PhpCommon.Comparison.Hashable.html">Hashable</a></li>
+				<li><a href="class-PhpCommon.Comparison.Hasher.html">Hasher</a></li>
+			</ul>
+
+
+			<h3>Exceptions</h3>
+			<ul>
+				<li><a href="class-PhpCommon.Comparison.IncomparableException.html">IncomparableException</a></li>
+				<li><a href="class-PhpCommon.Comparison.UnexpectedTypeException.html">UnexpectedTypeException</a></li>
+			</ul>
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-PhpCommon.Comparison.html" title="Summary of PhpCommon\Comparison"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Interface Hashable</h1>
+
+
+	<div class="description">
+	<p>Defines a method that a class implements to provide hashing functionality.</p>
+
+<p>Hashes are very important as a way to efficiently lookup objects in
+hash-based data structures. This interface aims to facilitate the use of
+those structures by allowing classes to define custom hashing strategies.</p>
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+<b><span>PhpCommon\Comparison\Hashable</span></b>			
+			 implements 
+				<a href="class-PhpCommon.Comparison.Equatable.html"><span>PhpCommon\Comparison\Equatable</span></a>
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-PhpCommon.html">PhpCommon</a>\<a href="namespace-PhpCommon.Comparison.html">Comparison</a><br>
+		
+
+				<b>Author:</b>
+				Marcos Passos <a href="&#x6d;&#97;&#x69;&#108;&#x74;&#111;&#58;&#x6d;&#97;&#x72;&#99;o&#x73;&#64;&#x63;&#114;o&#x63;&#116;&#x2e;&#99;&#x6f;&#x6d;">&#x6d;&#97;&#x72;&#99;o&#x73;&#64;&#x63;&#114;o&#x63;&#116;&#x2e;&#99;&#x6f;&#x6d;</a><br>
+			<b>Located at</b> <a href="source-class-PhpCommon.Comparison.Hashable.html#14-49" title="Go to source code">Hashable.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="getHash" id="_getHash">
+
+		<td class="attributes"><code>
+			 public 
+
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getHash">#</a>
+		<code><a href="source-class-PhpCommon.Comparison.Hashable.html#25-48" title="Go to source code">getHash</a>( )</code>
+
+		<div class="description short">
+			<p>Returns a hash code for the current object.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns a hash code for the current object.</p>
+
+<p>This method has the following properties:</p>
+
+<ul>
+<li>It is <em>consistent</em>: for any <code>$x</code>, multiple invocations of <code>$x-&gt;getHash()</code> consistently return the same value provided that <code>$x</code> remains unchanged according to the definition of the equivalence. The hash need not remain consistent from one execution of an application to another execution of the same application.</li>
+<li>It is <em>distributable across equivalence</em>: for any instance of <code><a href="class-PhpCommon.Comparison.Hashable.html">PhpCommon\Comparison\Hashable</a></code> <code>$x</code> and <code>$y</code>, if <code>$x-&gt;equals($y)</code>, then <code>$x-&gt;getHash() === $y-&gt;getHash()</code>. It is not necessary that the hash be distributable across <em>inequivalence</em>. If <code>$x-&gt;equals($y)</code> is <code>false</code>, <code>$x-&gt;getHash() === $y-&gt;getHash()</code> may still be <code>true</code>.</li>
+</ul>
+
+<p>When implementing this method it is recommended to use a fast algorithm
+that produces reasonably different results for unequal values, and
+shift the heavy comparison logic to
+PhpCommon\Comparison\Equatable::equals().</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					integer<br>The hash code for the current object.
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-PhpCommon.Comparison.Equatable.html#methods">PhpCommon\Comparison\Equatable</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-PhpCommon.Comparison.Equatable.html#_equals">equals()</a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		PHPCommon Comparison API API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>

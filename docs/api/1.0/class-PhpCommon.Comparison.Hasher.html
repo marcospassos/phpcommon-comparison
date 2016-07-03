@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Interface PhpCommon\Comparison\Hasher | PHPCommon Comparison API</title>
+
+	<link rel="stylesheet" href="resources/style.css?c2f33731c1948fbed7c333554678bfa68d4817da">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+				<li class="active">
+					<a href="namespace-PhpCommon.html">
+						PhpCommon<span></span>
+					</a>
+
+						<ul>
+				<li class="active">
+					<a href="namespace-PhpCommon.Comparison.html">
+						Comparison<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-PhpCommon.Comparison.Equivalence.html">
+						Equivalence					</a>
+
+						</li>
+				<li>
+					<a href="namespace-PhpCommon.Comparison.Hasher.html">
+						Hasher					</a>
+
+						</li>
+							</ul></li></ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="class-PhpCommon.Comparison.Comparable.html">Comparable</a></li>
+				<li><a href="class-PhpCommon.Comparison.Comparator.html">Comparator</a></li>
+				<li><a href="class-PhpCommon.Comparison.Equatable.html">Equatable</a></li>
+				<li><a href="class-PhpCommon.Comparison.Equivalence.html">Equivalence</a></li>
+				<li><a href="class-PhpCommon.Comparison.Hashable.html">Hashable</a></li>
+				<li class="active"><a href="class-PhpCommon.Comparison.Hasher.html">Hasher</a></li>
+			</ul>
+
+
+			<h3>Exceptions</h3>
+			<ul>
+				<li><a href="class-PhpCommon.Comparison.IncomparableException.html">IncomparableException</a></li>
+				<li><a href="class-PhpCommon.Comparison.UnexpectedTypeException.html">UnexpectedTypeException</a></li>
+			</ul>
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-PhpCommon.Comparison.html" title="Summary of PhpCommon\Comparison"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Interface Hasher</h1>
+
+
+	<div class="description">
+	<p>A strategy for hashing values and comparing them for equivalence.</p>
+
+<p>The <code><a href="class-PhpCommon.Comparison.Hasher.html#_hash">PhpCommon\Comparison\Hasher::hash()</a></code> method, introduced by this interface, is intended
+to provide a means for performing fast <em>inequivalence</em> checks and efficient
+insertion and lookup in hash-based data structures. This method is always
+<em>consistent</em> with PhpCommon\Comparison\Equivalence::equivalent(),
+which means that for any references <code>$x</code> and <code>$y</code>, if <code>equivalent($x, $y)</code>,
+then <code>hash($x) === hash($y)</code>. However, if <code>equivalence($x, $y)</code> evaluates to
+<code>false</code>, <code>hash($x) === hash($y)</code> may still be true. Hence why the <code>hash()</code>
+method is suitable for <em>inequivalence</em> checks, but not <em>equivalence</em> checks.</p>
+
+<p>In accordance with <code><a href="class-PhpCommon.Comparison.Equivalence.html">PhpCommon\Comparison\Equivalence</a></code>, a <code><a href="class-PhpCommon.Comparison.Hasher.html">PhpCommon\Comparison\Hasher</a></code> can be either
+generic or type-specific. For that reason, caution should be exercised to
+ensure the values passed to the methods
+PhpCommon\Comparison\Equivalence::equivalent() and <code><a href="class-PhpCommon.Comparison.Hasher.html#_hash">PhpCommon\Comparison\Hasher::hash()</a></code>
+match the type of values supported by the implementing class. Otherwise, an
+exception may be thrown.</p>
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+<b><span>PhpCommon\Comparison\Hasher</span></b>			
+			 implements 
+				<a href="class-PhpCommon.Comparison.Equivalence.html"><span>PhpCommon\Comparison\Equivalence</span></a>
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+	<div>
+		<h4>Direct known implementers</h4>
+			<a href="class-PhpCommon.Comparison.Hasher.DateTimeHasher.html">PhpCommon\Comparison\Hasher\DateTimeHasher</a>, 
+			<a href="class-PhpCommon.Comparison.Hasher.GenericHasher.html">PhpCommon\Comparison\Hasher\GenericHasher</a>
+	</div>
+
+	<div>
+		<h4>Indirect known implementers</h4>
+			<a href="class-PhpCommon.Comparison.Hasher.IdentityHasher.html">PhpCommon\Comparison\Hasher\IdentityHasher</a>, 
+			<a href="class-PhpCommon.Comparison.Hasher.ValueHasher.html">PhpCommon\Comparison\Hasher\ValueHasher</a>
+	</div>
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-PhpCommon.html">PhpCommon</a>\<a href="namespace-PhpCommon.Comparison.html">Comparison</a><br>
+		
+
+				<b>Author:</b>
+				Marcos Passos <a href="&#109;&#97;&#x69;&#x6c;&#116;&#111;&#x3a;&#x6d;&#97;&#114;&#x63;&#x6f;&#115;&#64;&#x6d;&#x61;&#114;&#99;&#x6f;&#x73;&#112;&#97;&#x73;&#x73;&#111;&#115;&#x2e;&#x63;&#111;&#109;">&#x6d;&#97;&#114;&#x63;&#x6f;&#115;&#64;&#x6d;&#x61;&#114;&#99;&#x6f;&#x73;&#112;&#97;&#x73;&#x73;&#111;&#115;&#x2e;&#x63;&#111;&#109;</a><br>
+			<b>Located at</b> <a href="source-class-PhpCommon.Comparison.Hasher.html#16-68" title="Go to source code">Hasher.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="hash" id="_hash">
+
+		<td class="attributes"><code>
+			 public 
+
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_hash">#</a>
+		<code><a href="source-class-PhpCommon.Comparison.Hasher.html#39-67" title="Go to source code">hash</a>( <span>mixed <var>$value</var></span> )</code>
+
+		<div class="description short">
+			<p>Returns a hash code for the given value.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns a hash code for the given value.</p>
+
+<p>This method has the following properties:</p>
+
+<ul>
+<li>It is <em>consistent</em>: for any <code>$x</code>, multiple invocations of <code>hash($x)</code> consistently return the same value provided <code>$x</code> remains unchanged according to the definition of the equivalence. The hash need not remain consistent from one execution of an application to another execution of the same application.</li>
+<li>It is <em>distributable across equivalence</em>: for any <code>$x</code> and <code>$y</code>, if <code>equivalent($x, $y)</code>, then <code>hash($x) === hash($y)</code>. It is not necessary that the hash be distributable across <em>inequivalence</em>. If <code>equivalence($x, $y)</code> is <code>false</code>, <code>hash($x) === hash($y)</code> may still be <code>true</code>.</li>
+</ul>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$value</var></dt>
+					<dd>The value to hash.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					integer<br>The hash code for the given value.
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><a href="class-PhpCommon.Comparison.UnexpectedTypeException.html">PhpCommon\Comparison\UnexpectedTypeException</a></code><br><p>If the type of the specified value does
+                                 not match the expected type.</p><br>
+					InvalidArgumentException<br><p>If some property of the specified value
+                                 prevents it from being hashed.</p>
+				</div>
+
+				<h4>See</h4>
+				<div class="list">
+						Equivalence               Equivalence relations<br>
+						Equivalence::equivalent() The equivalent() method<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-PhpCommon.Comparison.Equivalence.html#methods">PhpCommon\Comparison\Equivalence</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-PhpCommon.Comparison.Equivalence.html#_equivalent">equivalent()</a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-PhpCommon.Comparison.Equatable.html#methods">PhpCommon\Comparison\Equatable</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-PhpCommon.Comparison.Equatable.html#_equals">equals()</a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		PHPCommon Comparison API API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>
