@@ -196,8 +196,9 @@ exceptions:
   same length and same characters in corresponding positions.
 * Two numbers are equivalent if they are numerically equal
   (have the same number value).
-  * `NAN` is only equivalent to itself.
   * Positive and negative zeros are equivalent to one another.
+  * `NAN` is unequal to every other value, including itself.
+  * Positive and negative infinities are equal only to themselves.
 * Two boolean values are equivalent if both are true or both are false.
 * Two distinct objects are never equivalent. An expression comparing objects is
   only true if the operands reference the same instance.
