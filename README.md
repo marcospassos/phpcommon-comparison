@@ -154,7 +154,7 @@ $donors = new BloodDonors($equivalence);
 $james = new Person('James', 'A');
 $john = new Person('John', 'A');
 
-// James and John are considered equivalent once they the same blood group
+// James and John are considered equivalent once they are of the same blood group
 var_dump($equivalence->equivalent($james, $john)); // Outputs bool(true)
 
 // Initially, none of them are present in the collection
