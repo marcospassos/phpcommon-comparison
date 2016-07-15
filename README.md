@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.org/marcospassos/phpcommon-comparison.svg?branch=master)](https://travis-ci.org/marcospassos/phpcommon-comparison)
 [![Code Coverage](https://scrutinizer-ci.com/g/marcospassos/phpcommon-comparison/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/marcospassos/phpcommon-comparison/?branch=master)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/marcospassos/phpcommon-comparison/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/marcospassos/phpcommon-comparison/?branch=master)
-[![StyleCI](https://styleci.io/repos/60445417/shield)](https://styleci.io/repos/60445417)
+[![StyleCI](https://styleci.io/repos/61682522/shield)](https://styleci.io/repos/61682522)
 [![Latest Stable Version](https://poser.pugx.org/phpcommon/comparison/v/stable)](https://packagist.org/packages/phpcommon/comparison)
 [![Dependency Status](https://www.versioneye.com/user/projects/576a0606fdabcd003c031888/badge.svg?style=flat)](https://www.versioneye.com/user/projects/576a0606fdabcd003c031888)
 
