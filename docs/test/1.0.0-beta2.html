@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>
+      Test Documentation
+    </title>
+    <style type="text/css">
+        body {
+                text-rendering: optimizeLegibility;
+                font-variant-ligatures: common-ligatures;
+                font-kerning: normal;
+                margin-left: 2em;
+            }
+
+            body > ul > li {
+                font-family: Source Serif Pro, PT Sans, Trebuchet MS, Helvetica, Arial;
+                font-size: 2em;
+            }
+
+            h2 {
+                font-family: Tahoma, Helvetica, Arial;
+                font-size: 3em;
+            }
+
+            ul {
+                list-style: none;
+                margin-bottom: 1em;
+            }
+    </style>
+  </head>
+  <body>
+    <h2 id="PhpCommon\Comparison\Tests\Comparator\CallbackComparatorTest">
+      PhpCommon\Comparison\Tests\Comparator\CallbackComparator
+    </h2>
+    <ul>
+      <li style="color: #555753;">✓ The compare() method delegates calls to the callback function
+      </li>
+    </ul>
+    <h2 id="PhpCommon\Comparison\Tests\Equivalence\GenericEquivalenceTest">
+      PhpCommon\Comparison\Tests\Equivalence\GenericEquivalence
+    </h2>
+    <ul>
+      <li style="color: #555753;">✓ The equivalent() method throws an exception if the given value does not match the expected type
+      </li>
+      <li style="color: #555753;">✓ The equivalent() method delegates the comparison of strings to the equivalentString() method
+      </li>
+      <li style="color: #555753;">✓ The equivalent() method delegates the comparison of integer numbers to the equivalentInteger() method
+      </li>
+      <li style="color: #555753;">✓ The equivalent() method delegates the comparison of floating-point numbers to the equivalentFloat() method
+      </li>
+      <li style="color: #555753;">✓ The equivalent() method delegates the comparison of objects to the equivalentObject() method
+      </li>
+      <li style="color: #555753;">✓ The equivalent() method delegates the comparison of resources to the equivalentResource() method
+      </li>
+      <li style="color: #555753;">✓ The equivalent() method delegates the comparison of boolean values to the equivalentBoolean() method
+      </li>
+      <li style="color: #555753;">✓ The equivalent() method delegates the comparison of NULL values to the equivalentNull() method
+      </li>
+      <li style="color: #555753;">✓ The equivalent() method delegates the comparison of arrays to the equivalentArray() method
+      </li>
+    </ul>
+    <h2 id="PhpCommon\Comparison\Tests\Hasher\DateTimeHasherTest">
+      PhpCommon\Comparison\Tests\Hasher\DateTimeHasher
+    </h2>
+    <ul>
+      <li style="color: #555753;">✓ The equals() method returns true if instances are of the same class
+      </li>
+      <li style="color: #555753;">✓ The equals() method returns false if instances are of different classes
+      </li>
+      <li style="color: #555753;">✓ The equivalent() method returns true if DateTime instances have the same date, time and timezone
+      </li>
+      <li style="color: #555753;">✓ The equivalent() method returns false if DateTime instances have different date, time or timezone
+      </li>
+      <li style="color: #555753;">✓ The equivalent() method throws an exception if the left-hand value does not implement DateTimeInterface
+      </li>
+      <li style="color: #555753;">✓ The equivalent() produces the same hash-code for equivalent dates
+      </li>
+    </ul>
+    <h2 id="PhpCommon\Comparison\Tests\Hasher\GenericHasherTest">
+      PhpCommon\Comparison\Tests\Hasher\GenericHasher
+    </h2>
+    <ul>
+      <li style="color: #555753;">✓ The hash() method throws an exception if the given value does not match the expected type
+      </li>
+      <li style="color: #555753;">✓ The hash() method delegates hashing of strings to the hashString() method
+      </li>
+      <li style="color: #555753;">✓ The hash() method delegates hashing of integer numbers to the hashInteger() method
+      </li>
+      <li style="color: #555753;">✓ The hash() method delegates hashing of floating-point numbers to the hashFloat() method
+      </li>
+      <li style="color: #555753;">✓ The hash() method delegates hashing of objects to the hashObject() method
+      </li>
+      <li style="color: #555753;">✓ The hash() method delegates hashing of resources to the hashResource() method
+      </li>
+      <li style="color: #555753;">✓ The hash() method delegates hashing of boolean values to the hashBoolean() method
+      </li>
+      <li style="color: #555753;">✓ The hash() method delegates hashing of NULL values to the hashNull() method
+      </li>
+    </ul>
+    <h2 id="PhpCommon\Comparison\Tests\Equivalence\IdentityHasherTest">
+      PhpCommon\Comparison\Tests\Equivalence\IdentityHasher
+    </h2>
+    <ul>
+      <li style="color: #555753;">✓ The equals() method returns true if instances are of the same class
+      </li>
+      <li style="color: #555753;">✓ The equals() method returns false if instances are of different classes
+      </li>
+      <li style="color: #555753;">✓ The equivalent() method returns true if values are identical
+      </li>
+      <li style="color: #555753;">✓ The equivalent() method returns false if values are not identical
+      </li>
+      <li style="color: #555753;">✓ The equivalent() method is transitive
+      </li>
+      <li style="color: #555753;">✓ The equivalent() method is reflexive
+      </li>
+      <li style="color: #555753;">✓ The equivalent() method is symmetric
+      </li>
+      <li style="color: #555753;">✓ The equivalent() produces the same hash-code for equivalent values
+      </li>
+    </ul>
+    <h2 id="PhpCommon\Comparison\Tests\Hasher\ValueHasherTest">
+      PhpCommon\Comparison\Tests\Hasher\ValueHasher
+    </h2>
+    <ul>
+      <li style="color: #555753;">✓ The equals() method returns true if instances are of the same class and are equally configured
+      </li>
+      <li style="color: #555753;">✓ The equals() method returns false if instances are of different classes or are not equally configured
+      </li>
+      <li style="color: #555753;">✓ The equals() method is transitive
+      </li>
+      <li style="color: #555753;">✓ The equivalent() method returns true if values are considered equivalent
+      </li>
+      <li style="color: #555753;">✓ The equivalent() method returns false if values are not considered equivalent
+      </li>
+      <li style="color: #555753;">✓ The equivalent() method is transitive
+      </li>
+      <li style="color: #555753;">✓ The equivalent() method is reflexive
+      </li>
+      <li style="color: #555753;">✓ The equivalent() method is symmetric
+      </li>
+      <li style="color: #555753;">✓ The equivalent() delegates the comparison between Equatable objects to the objects being compared
+      </li>
+      <li style="color: #555753;">✓ The equivalent() returns false if Equatable objects are of different types
+      </li>
+      <li style="color: #555753;">✓ The equivalent() compares objects for identity by default
+      </li>
+      <li style="color: #555753;">✓ The equivalent() throws an exception if an object is Equatable but not Hashable
+      </li>
+      <li style="color: #555753;">✓ The equivalent() produces the same hash-code for equivalent values
+      </li>
+      <li style="color: #555753;">✓ Allows an external Equivalence to be specified for comparing objects of a particular class
+      </li>
+      <li style="color: #555753;">✓ Ensures that an external Equivalence specified for a class also applies to its subclasses
+      </li>
+      <li style="color: #555753;">✓ Allows an external Hasher to be specified for hashing objects of a particular class
+      </li>
+      <li style="color: #555753;">✓ Ensures that an external Hasher specified for a class also applies to its subclasses
+      </li>
+    </ul>
+    <h2 id="PhpCommon\Comparison\Tests\IncomparableExceptionTest">
+      PhpCommon\Comparison\Tests\IncomparableException
+    </h2>
+    <ul>
+      <li style="color: #555753;">✓ The forType() method creates an exception with a pre-formatted message for incomparable types
+      </li>
+      <li style="color: #555753;">✓ The forType() uses the fully qualified name of the class for identifying objects in the message
+      </li>
+    </ul>
+  </body>
+</html>
