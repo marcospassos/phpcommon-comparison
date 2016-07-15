@@ -6,7 +6,7 @@ use PhpCommon\Comparison\UnexpectedTypeException;
 use PHPUnit_Framework_TestCase;
 use Exception;
 
-class UnexpectedTypeExceptionTest extends PHPUnit_Framework_TestCase
+class UnexpectedTypeException extends PHPUnit_Framework_TestCase
 {
     /**
      * @expectedException \PhpCommon\Comparison\UnexpectedTypeException
