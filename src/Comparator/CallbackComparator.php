@@ -1,5 +1,14 @@
 <?php
 
+/**
+ * This file is part of the phpcommon/comparison package.
+ *
+ * (c) Marcos Passos <marcos@marcospassos.com>
+ *
+ * For the full copyright and license information, please view the LICENSE file
+ * that was distributed with this source code.
+ */
+
 namespace PhpCommon\Comparison\Comparator;
 
 use PhpCommon\Comparison\Comparator;
