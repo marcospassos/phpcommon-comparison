@@ -109,7 +109,7 @@ final class Money implements Equatable
 
 ## Equivalence Relations
 
-There are many cases, though, where having an non-standard, or _external_, way
+There are many cases, though, where having a non-standard, or _external_, way
 for comparing two values become necessary. Perhaps, the most obvious use case
 for those custom relations is for use with collections, but it is also useful
 for providing those capabilities to scalar values or an existing class
