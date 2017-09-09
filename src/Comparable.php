@@ -66,7 +66,7 @@ interface Comparable
      *
      * @param Comparable $other The object to compare to.
      *
-     * @return boolean Returns a negative integer, zero, or a positive integer
+     * @return integer Returns a negative integer, zero, or a positive integer
      *                 as this object is less than, equal to or greater than
      *                 the specified object.
      *
